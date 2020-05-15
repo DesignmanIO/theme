@@ -193,7 +193,7 @@ export default (componentStyleName, componentStyle = {}, mapPropsToStyleNames, o
 
       isRefDefined() {
         // Define refs on all stateful containers
-        return WrappedComponent.prototype.render;
+        return WrappedComponent.prototype?.render;
       }
 
       resolveAddedProps() {
